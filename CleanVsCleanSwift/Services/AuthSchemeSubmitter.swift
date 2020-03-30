@@ -15,7 +15,6 @@ protocol AuthSchemeSubmitterProtocol {
 
 struct AuthSchemeSubmitterFakeImpl: AuthSchemeSubmitterProtocol {
     func submit(_ scheme: AuthSchemeSubmitionDTO) -> Single<Void> {
-        print("fuch fuckksdfsdf", scheme)
         return Single.just(())
             .delay(.seconds(3), scheduler: ConcurrentDispatchQueueScheduler(qos: .userInitiated))
     }

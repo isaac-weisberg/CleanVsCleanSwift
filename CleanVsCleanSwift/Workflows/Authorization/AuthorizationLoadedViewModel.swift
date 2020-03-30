@@ -59,5 +59,10 @@ class AuthorizationLoadedViewModel {
             .bind(to: submitionState)
             .disposed(by: disposeBag)
 
+        submitionState
+            .debug("AuthorizationLoaded state")
+            .subscribe()
+            .disposed(by: disposeBag)
+
     }
 }

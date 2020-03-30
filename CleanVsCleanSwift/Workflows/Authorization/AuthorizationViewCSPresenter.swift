@@ -1,0 +1,5 @@
+protocol AuthorizationViewCSPresenterProtocol {
+    
+}
+
+class 

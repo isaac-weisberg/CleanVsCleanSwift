@@ -60,3 +60,11 @@ class AuthorizationView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+protocol AuthorizationDisplayLogic: class {
+    
+}
+
+extension AuthorizationView: AuthorizationDisplayLogic {
+
+}

@@ -18,6 +18,11 @@
 		FA621F1A24253D0F00522C7F /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA621F1924253D0F00522C7F /* AuthorizationView.swift */; };
 		FA621F1C2425451900522C7F /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA621F1B2425451900522C7F /* AuthTextField.swift */; };
 		FA621F1E242545CD00522C7F /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA621F1D242545CD00522C7F /* AuthorizationViewModel.swift */; };
+		FAB1F1602430DFE800A57F4A /* AuthTextFieldCSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F15F2430DFE800A57F4A /* AuthTextFieldCSPresenter.swift */; };
+		FAB1F1622430E18F00A57F4A /* AuthTextFieldCSInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F1612430E18F00A57F4A /* AuthTextFieldCSInteractor.swift */; };
+		FAB1F1662430E99900A57F4A /* AuthSchemaCSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F1652430E99900A57F4A /* AuthSchemaCSPresenter.swift */; };
+		FAB1F1682430ECF800A57F4A /* AuthorizationViewCSInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F1672430ECF800A57F4A /* AuthorizationViewCSInteractor.swift */; };
+		FAB1F16A2430ED5900A57F4A /* AuthorizationViewCSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1F1692430ED5900A57F4A /* AuthorizationViewCSPresenter.swift */; };
 		FAD3F5092427E0ED000166C2 /* AuthSchemeSubmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3F5082427E0ED000166C2 /* AuthSchemeSubmitter.swift */; };
 		FAD3F50B2427E7F6000166C2 /* AuthorizationLoadedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3F50A2427E7F6000166C2 /* AuthorizationLoadedViewModel.swift */; };
 		FAE51D092427CF5D00B5AA79 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE51D082427CF5D00B5AA79 /* DI.swift */; };
@@ -40,6 +45,11 @@
 		FA621F1924253D0F00522C7F /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		FA621F1B2425451900522C7F /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		FA621F1D242545CD00522C7F /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		FAB1F15F2430DFE800A57F4A /* AuthTextFieldCSPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldCSPresenter.swift; sourceTree = "<group>"; };
+		FAB1F1612430E18F00A57F4A /* AuthTextFieldCSInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextFieldCSInteractor.swift; sourceTree = "<group>"; };
+		FAB1F1652430E99900A57F4A /* AuthSchemaCSPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSchemaCSPresenter.swift; sourceTree = "<group>"; };
+		FAB1F1672430ECF800A57F4A /* AuthorizationViewCSInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewCSInteractor.swift; sourceTree = "<group>"; };
+		FAB1F1692430ED5900A57F4A /* AuthorizationViewCSPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewCSPresenter.swift; sourceTree = "<group>"; };
 		FAD3F5082427E0ED000166C2 /* AuthSchemeSubmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSchemeSubmitter.swift; sourceTree = "<group>"; };
 		FAD3F50A2427E7F6000166C2 /* AuthorizationLoadedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationLoadedViewModel.swift; sourceTree = "<group>"; };
 		FAE51D082427CF5D00B5AA79 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
@@ -82,6 +92,8 @@
 			children = (
 				FA621F1B2425451900522C7F /* AuthTextField.swift */,
 				FA0228682427CA390040535C /* AuthTextFieldViewModel.swift */,
+				FAB1F15F2430DFE800A57F4A /* AuthTextFieldCSPresenter.swift */,
+				FAB1F1612430E18F00A57F4A /* AuthTextFieldCSInteractor.swift */,
 			);
 			path = AuthTextField;
 			sourceTree = "<group>";
@@ -152,6 +164,8 @@
 				FA621F1924253D0F00522C7F /* AuthorizationView.swift */,
 				FA621F1D242545CD00522C7F /* AuthorizationViewModel.swift */,
 				FAD3F50A2427E7F6000166C2 /* AuthorizationLoadedViewModel.swift */,
+				FAB1F1672430ECF800A57F4A /* AuthorizationViewCSInteractor.swift */,
+				FAB1F1692430ED5900A57F4A /* AuthorizationViewCSPresenter.swift */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 				FA0228672427CA280040535C /* AuthTextField */,
 				FAE51D0B2427D0D500B5AA79 /* AuthSchemaView.swift */,
 				FAE51D0D2427D1D400B5AA79 /* AuthSchemaViewModel.swift */,
+				FAB1F1652430E99900A57F4A /* AuthSchemaCSPresenter.swift */,
 			);
 			path = AuthSchemaView;
 			sourceTree = "<group>";
@@ -264,13 +279,18 @@
 			files = (
 				FA621F0124253BCE00522C7F /* AppDelegate.swift in Sources */,
 				FA621F1C2425451900522C7F /* AuthTextField.swift in Sources */,
+				FAB1F1602430DFE800A57F4A /* AuthTextFieldCSPresenter.swift in Sources */,
 				FAE51D0E2427D1D400B5AA79 /* AuthSchemaViewModel.swift in Sources */,
 				FAE51D092427CF5D00B5AA79 /* DI.swift in Sources */,
 				FA621F1824253CAB00522C7F /* AuthorizationController.swift in Sources */,
+				FAB1F1622430E18F00A57F4A /* AuthTextFieldCSInteractor.swift in Sources */,
+				FAB1F1662430E99900A57F4A /* AuthSchemaCSPresenter.swift in Sources */,
 				FA5C6FF42427CE270044C603 /* AuthSchemeRetriever.swift in Sources */,
 				FAD3F50B2427E7F6000166C2 /* AuthorizationLoadedViewModel.swift in Sources */,
 				FAD3F5092427E0ED000166C2 /* AuthSchemeSubmitter.swift in Sources */,
 				FA621F1A24253D0F00522C7F /* AuthorizationView.swift in Sources */,
+				FAB1F1682430ECF800A57F4A /* AuthorizationViewCSInteractor.swift in Sources */,
+				FAB1F16A2430ED5900A57F4A /* AuthorizationViewCSPresenter.swift in Sources */,
 				FA0228692427CA390040535C /* AuthTextFieldViewModel.swift in Sources */,
 				FAE51D0C2427D0D500B5AA79 /* AuthSchemaView.swift in Sources */,
 				FA5C6FF12427CCBC0044C603 /* InsetTextField.swift in Sources */,
